@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+    <bean id="beanPostProcessor"
+          class="com.whz.javaee.spring.ioc.BeanPostProcessorImpl"/>
+    <bean id="source" class="com.whz.javaee.spring.ioc.Source">
+        <property name="fruit" value="橙汁"/>
+        <property name="sugar" value="少糖"/>
+        <property name="size" value="大杯"/>
+    </bean>
+
+    <bean id="juiceMaker" class="com.whz.javaee.spring.ioc.JuiceMaker"
+          init-method="init" destroy-method="myDestroy">
+        <property name="beverageShop" value="贡茶"/>
+        <property name="source" ref="source"/>
+    </bean>
+</beans>
