@@ -4,11 +4,9 @@ import com.whz.springmvc.entity.User;
 import com.whz.springmvc.service.ExcelExportService;
 import com.whz.springmvc.view.ExcelView;
 import org.apache.commons.collections4.CollectionUtils;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -42,7 +40,8 @@ public class ExcelController {
 
     /**
      * 生成的excel无法打开,为毛？
-     * @return
+     *
+     * @return ExcelExportService
      */
     private ExcelExportService userExcelExportService() {
         return (Map<String, Object> model, Workbook workbook) -> {

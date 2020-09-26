@@ -5,6 +5,11 @@ import org.springframework.beans.factory.*;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
+/**
+ * 一般获取applicationContext时需要实现ApplicationContextAware
+ * 加载配置文件时需要实现Initializingbean
+ *
+ */
 public class JuiceMaker implements BeanNameAware, BeanFactoryAware,
         ApplicationContextAware, InitializingBean, DisposableBean {
 
