@@ -10,7 +10,8 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @SpringBootApplication
 public class SpringBootDemoApp {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
+		// aaaaa testtest
 		// aaaaa  ssssss 
         SpringApplication.run(SpringBootDemoApp.class, args);
     }
