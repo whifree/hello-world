@@ -12,7 +12,8 @@ public class SpringBootDemoApp {
 
     public static void main(String[] args) { 
 		// aaaaa testtest
-		// aaaaa  ssssss 
+		// aaaaa  ssssss 的点点滴滴多 随时随地的方法 大大方方或或或或
         SpringApplication.run(SpringBootDemoApp.class, args);
+		// ssfdfsjdi 
     }
 }
