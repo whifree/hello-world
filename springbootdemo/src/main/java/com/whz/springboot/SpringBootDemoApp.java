@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 public class SpringBootDemoApp {
 
     public static void main(String[] args) {
-		// aaaaa 
+		// aaaaa  ssssss 
         SpringApplication.run(SpringBootDemoApp.class, args);
     }
 }
